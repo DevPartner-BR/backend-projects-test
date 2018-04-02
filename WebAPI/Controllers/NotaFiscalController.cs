@@ -28,7 +28,7 @@ namespace WebAPI.Controllers
         }
 
         /// <summary>
-        /// InsereNotaFiscal
+        /// Insere NotaFiscal
         /// </summary>
         [System.Web.Http.HttpPost]
         [System.Web.Http.Route("insere")]
@@ -40,7 +40,7 @@ namespace WebAPI.Controllers
         }
 
         /// <summary>
-        /// InsereNotaFiscal
+        /// Atualiza NotaFiscal
         /// </summary>
         [System.Web.Http.HttpPost]
         [System.Web.Http.Route("atualiza")]
@@ -52,7 +52,7 @@ namespace WebAPI.Controllers
         }
 
         /// <summary>
-        /// ExcluiNotaFiscal
+        /// Exclui NotaFiscal
         /// </summary>
         [System.Web.Http.HttpDelete]
         [System.Web.Http.Route("exclui")]
