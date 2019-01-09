@@ -56,7 +56,7 @@ Não se sentiu a vontade com a estrutura do projeto ? **Não tem problema**, pod
 
 1. Construa uma collection em postman para testarmos suas APIs.
 2. Se for preciso modificar a estrutura e workflow, atualizar o README.
-3. Submeta o Pull Request e envie um email para **carlos.ribeiro@devpartner.com.br** :D
+3. Submeta o Pull Request e envie um email para **fabiana.carvalhal@devpartner.com.br e samara.freitas@devpartner.com.br** :D
 
 ## | O que acontece depois ?
 
