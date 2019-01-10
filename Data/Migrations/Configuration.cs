@@ -9,9 +9,7 @@ namespace Data.Migrations
     {
         public Configuration()
         {
-            // Alterado para automático por ser uma questão de teste
-            // Não deve ser usado em um cenário real (ambiente produtivo)
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(Data.Context.SystemContext context)

@@ -10,11 +10,36 @@ namespace Data.Context
     public class SystemContext : DbContext
     {
 
+        #region Construtores
+
+        /// <summary>
+        /// Cria uma nova instância de SystemContext
+        /// </summary>
+        /// <param name="nameOrConnectionString">Nome da configuração de string de conexão ou string de conexão</param>
+        public SystemContext(string nameOrConnectionString) : base(nameOrConnectionString) { }
+
+        /// <summary>
+        /// Cria uma nova instância de SystemContext
+        /// </summary>
+        public SystemContext() : this("DevPartnerDb") { }
+
+        #endregion
+
+        #region Métodos Estáticos
+
+        /// <summary>
+        /// Cria uma nova instância de SystemContext
+        /// </summary>
+        /// <returns>Uma nova instãncia do objeto</returns>
         public static SystemContext Create()
         {
             return new SystemContext();
         }
 
+        #endregion
+
+
+        #region Overrides
 
         protected override void OnModelCreating(DbModelBuilder m)
         {
@@ -40,8 +65,20 @@ namespace Data.Context
             m.Entity<NotaFiscal>().HasKey(k => k.Id);
             m.Entity<NotaFiscal>().HasIndex(i => i.NumeroNf).IsUnique(true).HasName("AK_NotaFiscal_NumeroNf");
 
+            m.Entity<NotaFiscal>().Ignore(c => c.ValidationResult);
+            m.Entity<NotaFiscal>().Ignore(c => c.CascadeMode);
+
             base.OnModelCreating(m);
         }
 
+        #endregion
+
+        #region DbSets
+
+        public virtual DbSet NotaFiscal { get; set; }
+
+        #endregion
+
     }
+
 }
