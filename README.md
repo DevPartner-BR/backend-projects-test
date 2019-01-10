@@ -86,7 +86,7 @@ Aqui usamos muito o [Visual Studio](https://www.visualstudio.com/) e [VS Code](h
 
 <sub>Os dados presentes neste teste são totalmente fictícios.</sub>
 
-## Instruções para Criação do banco de dados
+## | Instruções para Criação do banco de dados
 ```sql
 -- Criar login:
 CREATE LOGIN DevPartnerUser WITH PASSWORD = 'devpartner@2019';
