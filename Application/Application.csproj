@@ -40,7 +40,14 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App\AppServiceBase.cs" />
+    <Compile Include="App\NotaFiscalAppService.cs" />
     <Compile Include="AutoMapper\AutoMapperConfig.cs" />
+    <Compile Include="AutoMapper\MappingProfile\DomainToViewModelMappingProfile.cs" />
+    <Compile Include="AutoMapper\MappingProfile\ViewModelToDomainMappingProfile.cs" />
+    <Compile Include="Interfaces\IAppServiceBase.cs" />
+    <Compile Include="Interfaces\INotaFiscalAppService .cs" />
+    <Compile Include="Model\NotaFiscalViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -56,11 +63,6 @@
       <Name>Domain</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App\" />
-    <Folder Include="AutoMapper\MappingProfile\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

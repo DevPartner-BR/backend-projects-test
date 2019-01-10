@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "db23ae2d-dd45-4324-90ad-e4d2205dae0a",
+		"name": "DevPartnerCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1-Get token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "adminAPI",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "devPartner@123",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:61171/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61171",
+					"path": [
+						"token"
+					]
+				},
+				"description": "obter token de acesso"
+			},
+			"response": []
+		},
+		{
+			"name": "2-Insert",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "bearer DkCfBctl5quNMu4AV2bDhhR-IZXPJ_lF1zPgN6PlGF_V26hM4N24osnEYAWd-t-qERRAmwRz5EXvAZgdY2Yamk2PVgXHdb1PsAVWTOkOiFUpeBCmg_UfE1DwXYbNJ0F7O_HFi7-Qds-0skJWt8iX1okWrdNnijdV-yVy9ZCoYTbfR2GavT6jPW0JJLqlcRJd"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Id\" : 0,\n\t\"Numero\" : \"4347654321\",\n\t\"ValorTotal\" : 550,\n\t\"Data\" : \"02-28-2018\",\n\t\"CNPJEmissor\" : \"46.789.735/0001-27\",\n\t\"CNPJDestinatario\" : \"15.348.355/0001-79\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:61171/api/notafiscal/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61171",
+					"path": [
+						"api",
+						"notafiscal",
+						"add"
+					]
+				},
+				"description": "inser��o de nota fiscal"
+			},
+			"response": []
+		},
+		{
+			"name": "3-Get all",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer DkCfBctl5quNMu4AV2bDhhR-IZXPJ_lF1zPgN6PlGF_V26hM4N24osnEYAWd-t-qERRAmwRz5EXvAZgdY2Yamk2PVgXHdb1PsAVWTOkOiFUpeBCmg_UfE1DwXYbNJ0F7O_HFi7-Qds-0skJWt8iX1okWrdNnijdV-yVy9ZCoYTbfR2GavT6jPW0JJLqlcRJd"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:61171/api/NotaFiscal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61171",
+					"path": [
+						"api",
+						"NotaFiscal"
+					]
+				},
+				"description": "retorna todas as notas fiscais"
+			},
+			"response": []
+		},
+		{
+			"name": "4-Get by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer jkpJQaHUiHHiWJbtNNX3kd7szc8s2zIBXLmdxzoDYuQP3005oKmkyCB2EvUbCUGMSgRFh2hHu9QNyigYAY8vUt7PcUmP97Oho6iH2ghdIZE7DgGVGfNX4IYLA4QKRczSAERItQP6FThKnEBRuIjcCad_7O5_D6U6wafxkpLxqPnqnCVA3SNma7K1aoZHijIy"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Id\": 1,\n    \"Numero\": \"123456\",\n    \"ValorTotal\": 999.51,\n    \"Data\": \"2018-01-08T00:00:00\",\n    \"CNPJEmissor\": \"14.218.835/0001-27\",\n    \"CNPJDestinatario\": \"15.348.355/0001-79\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:61171/api/notafiscal/getid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61171",
+					"path": [
+						"api",
+						"notafiscal",
+						"getid"
+					]
+				},
+				"description": "retorna uma nota fiscal pelo id"
+			},
+			"response": []
+		},
+		{
+			"name": "5-Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "bearer alY-fFWcRS3jzdRtSkSxXzU2vyWPXj6SZdyy6mHrRfHoOW4i5oA5xyxjYjRZMQaZVExI3cXnagDu1eUZVlndTPbttSY9rLRqQyjjGJAt_ncP13A-ct59l9cFgHC9OjKAEYHeTB9zczqTQC0nL0atSpi8laxODrLkFngp6TYQw-M_vMasJwbDuEeo5jwCJQx0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Id\": 5,\n    \"Numero\": \"123456\",\n    \"ValorTotal\": 999.51,\n    \"Data\": \"2018-01-08T00:00:00\",\n    \"CNPJEmissor\": \"14.218.835/0001-27\",\n    \"CNPJDestinatario\": \"15.348.355/0001-79\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:61171/api/notafiscal/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61171",
+					"path": [
+						"api",
+						"notafiscal",
+						"update"
+					]
+				},
+				"description": "atualiza uma nota fiscal"
+			},
+			"response": []
+		},
+		{
+			"name": "6-delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer wSJfOs1zdIo3S7Q0nn546clmk8dcT1XNVK8wJI9F2Qz18QC5IQEnzPpOGAfpyM2uBxjoIcct-IhJ2ohylhn6lRm3cyOACj0GCJqc77oYRoYFjozbNsjY3fVPBbvFhHXQ5EchIuqZfK-0ChuqYpAOFFk74u9x3aLpQt_7QMRn-5pZzpfKESwm2BNCtmBjpzy9"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Id\": 7,\n    \"Numero\": \"123456\",\n    \"ValorTotal\": 999.51,\n    \"Data\": \"2018-01-08T00:00:00\",\n    \"CNPJEmissor\": \"14.218.835/0001-27\",\n    \"CNPJDestinatario\": \"15.348.355/0001-79\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:61171/api/notafiscal/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61171",
+					"path": [
+						"api",
+						"notafiscal",
+						"delete"
+					]
+				},
+				"description": "exclui uma nota fiscal pelo id"
+			},
+			"response": []
+		}
+	]
+}

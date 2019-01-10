@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using Application.AutoMapper.MappingProfile;
+using AutoMapper;
 
 namespace Application.AutoMapper
 {
@@ -8,7 +9,8 @@ namespace Application.AutoMapper
         {
             Mapper.Initialize(x =>
             {
-
+                x.AddProfile<DomainToViewModelMappingProfile>();
+                x.AddProfile<ViewModelToDomainMappingProfile>();
             });
         }
     }
