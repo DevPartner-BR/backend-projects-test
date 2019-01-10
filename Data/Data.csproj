@@ -37,6 +37,8 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\NotaFiscalRepository.cs" />
+    <Compile Include="Repositories\RepositorioBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj">
@@ -69,7 +71,6 @@
     <Folder Include="Context\UnitOfWork\" />
     <Folder Include="EntitiesConfig\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201901101301242_CriacaoTabelaNotaFiscal.resx">
