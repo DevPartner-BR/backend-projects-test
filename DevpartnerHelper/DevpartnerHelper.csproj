@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Functions\Hash.cs" />
     <Compile Include="Functions\PatchHelper.cs" />
+    <Compile Include="Functions\Validadores.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

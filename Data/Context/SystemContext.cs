@@ -15,13 +15,7 @@ namespace Data.Context
         /// <summary>
         /// Cria uma nova instância de SystemContext
         /// </summary>
-        /// <param name="nameOrConnectionString">Nome da configuração de string de conexão ou string de conexão</param>
-        public SystemContext(string nameOrConnectionString) : base(nameOrConnectionString) { }
-
-        /// <summary>
-        /// Cria uma nova instância de SystemContext
-        /// </summary>
-        public SystemContext() : this("DevPartnerDb") { }
+        public SystemContext() : base("DevPartnerDb") { }
 
         #endregion
 

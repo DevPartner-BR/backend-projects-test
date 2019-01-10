@@ -10,6 +10,9 @@ namespace Devpartner.Infra.CrossCutting.IoC
         public static void RegisterServices(Container container)
         {
 
+            // container.Options.LifestyleSelectionBehavior = new SingletonLifestyleSelectionBehavior();
+            container.Options.DefaultLifestyle = Lifestyle.Scoped;
+
             // Data
             container.Register<SystemContext>();
 

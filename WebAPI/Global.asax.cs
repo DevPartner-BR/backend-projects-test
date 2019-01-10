@@ -20,7 +20,7 @@ namespace WebAPI
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             #region AutoMapper Configuration
-            var container = new Container();
+            Container container = new Container();
             BootStrapper.RegisterServices(container);
             container.RegisterWebApiControllers(GlobalConfiguration.Configuration);
             container.Verify();

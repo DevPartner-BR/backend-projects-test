@@ -240,9 +240,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CriticasResponse.cs" />
+    <Compile Include="Models\GenericResponse.cs" />
+    <Compile Include="Models\NotaFiscal\NotaFiscalInsertRequest.cs" />
+    <Compile Include="Models\NotaFiscal\NotaFiscalUpdateRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Validations\CnpjValidationAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -349,10 +354,8 @@
     <Folder Include="App_Data\" />
     <Folder Include="Arquivos\" />
     <Folder Include="images\" />
-    <Folder Include="Models\" />
     <Folder Include="Providers\" />
     <Folder Include="Views\Default\" />
-    <Folder Include="Views\NotaFiscal\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
@@ -365,6 +368,10 @@
     <ProjectReference Include="..\Application\Application.csproj">
       <Project>{2eb3b0ba-909b-4030-8b2d-6c331b237b34}</Project>
       <Name>Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DevpartnerHelper\DevpartnerHelper.csproj">
+      <Project>{c870b696-5cbf-448d-8e9d-8978a127aaf3}</Project>
+      <Name>DevpartnerHelper</Name>
     </ProjectReference>
     <ProjectReference Include="..\IoC\IoC.csproj">
       <Project>{ddc014a6-6faa-4270-8bcc-4d47475ccc56}</Project>
