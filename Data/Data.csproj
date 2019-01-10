@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Context\SystemContext.cs" />
+    <Compile Include="Context\UnitOfWork\UnitOfWork.cs" />
     <Compile Include="Migrations\201901101301242_CriacaoTabelaNotaFiscal.cs" />
     <Compile Include="Migrations\201901101301242_CriacaoTabelaNotaFiscal.Designer.cs">
       <DependentUpon>201901101301242_CriacaoTabelaNotaFiscal.cs</DependentUpon>
@@ -68,7 +69,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Context\UnitOfWork\" />
     <Folder Include="EntitiesConfig\" />
     <Folder Include="Interfaces\" />
   </ItemGroup>

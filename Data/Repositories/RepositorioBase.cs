@@ -70,14 +70,6 @@ namespace Data.Repositories
         }
 
         /// <summary>
-        /// Salvar as mudanças realizadas no contexto na base de dados
-        /// </summary>
-        public int SalvarMudancas()
-        {
-            return _ctx.SaveChanges();
-        }
-
-        /// <summary>
         /// Liberar recursos
         /// </summary>
         public virtual void Dispose()

@@ -2,17 +2,17 @@
 using System;
 using System.Collections.Generic;
 
-namespace Domain.Interfaces.Repository
+namespace Domain.Interfaces.Services
 {
-    public interface IRepositoryBase<TEntity> : IDisposable where TEntity : EntityBase<TEntity>
+    public interface IServiceBase<TEntity> : IDisposable where TEntity : EntityBase<TEntity>
     {
 
         /// <summary>
         /// Adicionar um registro ao contexto
         /// </summary>
         /// <param name="entidade">Entidade a ser adicionada</param>
-        TEntity Adicionar(TEntity entidade);
-        
+        TEntity Adicionar(TEntity entity);
+
         /// <summary>
         /// Busca um registro pelo id do mesmo
         /// </summary>

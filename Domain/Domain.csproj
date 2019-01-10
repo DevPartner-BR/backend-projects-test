@@ -65,13 +65,15 @@
     <Compile Include="Entities\EntityIdBase.cs" />
     <Compile Include="Entities\NotaFiscal.cs" />
     <Compile Include="Interfaces\Entities\IEntity.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Interfaces\Repository\INotaFiscalRepository.cs" />
     <Compile Include="Interfaces\Repository\IRepositoryBase.cs" />
+    <Compile Include="Interfaces\Services\INotaFiscalService.cs" />
+    <Compile Include="Interfaces\Services\IServiceBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Enum\" />
-    <Folder Include="Interfaces\Services\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
