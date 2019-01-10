@@ -1,4 +1,6 @@
-﻿using AutoMapper;
+﻿using Application.Model;
+using AutoMapper;
+using Domain.Entities;
 
 namespace Application.AutoMapper
 {
@@ -8,6 +10,13 @@ namespace Application.AutoMapper
         {
             Mapper.Initialize(x =>
             {
+
+                // Entitidade para View Model
+                x.CreateMap<NotaFiscal, NotaFiscalViewModel>();
+
+                // View Model para Entidade
+                x.CreateMap<NotaFiscalViewModel, NotaFiscal>()
+                    .ForSourceMember(p => p.Id, a => a.Ignore());
 
             });
         }

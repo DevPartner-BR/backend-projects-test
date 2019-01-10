@@ -1,34 +1,33 @@
-﻿using Domain.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
-namespace Domain.Interfaces.Services
+namespace Application.Interfaces
 {
-    public interface IServiceBase<TEntity> : IDisposable where TEntity : EntityBase<TEntity>
+    public interface IApplicationCrud<TViewModel> where TViewModel: IApplicationViewModel
     {
 
         /// <summary>
         /// Adicionar um registro ao contexto
         /// </summary>
         /// <param name="entity">Entidade a ser adicionada</param>
-        TEntity Adicionar(TEntity entity);
+        TViewModel Adicionar(TViewModel entity);
 
         /// <summary>
         /// Busca um registro pelo id do mesmo
         /// </summary>
         /// <param name="id">Id do registro</param>
-        TEntity ObterPorId(Guid id);
+        TViewModel ObterPorId(Guid id);
 
         /// <summary>
         /// Obter todos os registros da entidade
         /// </summary>
-        IEnumerable<TEntity> ObterTodos();
+        IEnumerable<TViewModel> ObterTodos();
 
         /// <summary>
-        /// Atualizar todos os registros da entidade
+        /// Atualizar um registro de uma entidade
         /// </summary>
-        /// <param name="entity">Entidade a ser atualizada</param>
-        TEntity Atualizar(TEntity entity);
+        /// <param name="view">ViewModel da entidade a ser atualizada</param>
+        TViewModel Atualizar(TViewModel view);
 
         /// <summary>
         /// Excluir o registro da entidade

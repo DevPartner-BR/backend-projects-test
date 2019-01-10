@@ -71,13 +71,13 @@ namespace Domain.Entities
                 .WithMessage("O valor total da nota deve ser maior do que 0 (zero)");
 
             RuleFor(c => c.DataNf)
-                .NotNull()
+                .NotEmpty()
                 .LessThanOrEqualTo(DateTime.Now)
                 .WithMessage("A data de emissão da nota não pode ser superior a data atual");
 
 
             RuleFor(c => c.CnpjEmissorNf)
-                .NotNull()
+                .NotEmpty()
                 .WithMessage("O Cnpj do emissor deve ser informado");
 
             RuleFor(c => c.CnpjDestinatarioNf)

@@ -28,7 +28,7 @@ namespace Domain.Interfaces.Repository
         /// Atualizar todos os registros da entidade
         /// </summary>
         /// <param name="entity">Entidade a ser atualizada</param>
-        void Atualizar(TEntity entity);
+        TEntity Atualizar(TEntity entity);
 
         /// <summary>
         /// Excluir o registro da entidade

@@ -55,9 +55,10 @@ namespace Data.Repositories
         /// Atualizar registro no contexto
         /// </summary>
         /// <param name="entity">Entidade a ser atualizada</param>
-        public virtual void Atualizar(TEntity entity)
+        public virtual TEntity Atualizar(TEntity entity)
         {
             _ctx.Entry<TEntity>(entity).State = EntityState.Modified;
+            return _ctx.Entry<TEntity>(entity).Entity;
         }
 
         /// <summary>
