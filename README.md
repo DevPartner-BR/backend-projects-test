@@ -85,3 +85,28 @@ Aqui usamos muito o [Visual Studio](https://www.visualstudio.com/) e [VS Code](h
 
 
 <sub>Os dados presentes neste teste são totalmente fictícios.</sub>
+
+## Instruções para Criação do banco de dados
+```sql
+-- Criar login:
+CREATE LOGIN DevPartnerUser WITH PASSWORD = 'devpartner@2019';
+
+-- Criar Usuário no servidor
+CREATE USER DevPartnerUser FOR LOGIN DevPartnerUser;
+
+-- Criar Base de dados
+CREATE DATABASE devpartnerdb;
+ALTER DATABASE devpartnerdb COLLATE Latin1_General_CI_AI;
+
+-- Habilitar snapshot no banco
+use master;
+ALTER DATABASE devpartnerdb SET SINGLE_USER;
+ALTER DATABASE devpartnerdb SET ALLOW_SNAPSHOT_ISOLATION ON;
+ALTER DATABASE devpartnerdb SET READ_COMMITTED_SNAPSHOT ON;
+ALTER DATABASE devpartnerdb SET MULTI_USER;
+
+-- Criar  usuário no banco
+use devpartnerdb;
+CREATE USER DevPartnerUser FOR LOGIN DevPartnerUser WITH DEFAULT_SCHEMA=dbo;
+ALTER ROLE db_owner ADD MEMBER DevPartnerUser;
+```
