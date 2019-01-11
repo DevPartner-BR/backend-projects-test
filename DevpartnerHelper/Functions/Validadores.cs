@@ -15,6 +15,9 @@
         public static bool VerificarCnpj(string cnpj)
         {
 
+            if (string.IsNullOrWhiteSpace(cnpj))
+                return false;
+
             // Invalidar pelo tamanho
             if (cnpj.Length != 14)
                 return false;

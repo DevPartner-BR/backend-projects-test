@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using DevpartnerHelper.Functions;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -76,7 +77,15 @@ namespace Domain.Entities
                 .NotNull()
                 .WithMessage("O Cnpj do destinatário deve ser informado");
 
-            //TODO: Incluir validação dos cnpjs
+            RuleFor(c => c.CnpjEmissorNf)
+                .NotNull()
+                .Must(doc => Validadores.VerificarCnpj(doc))
+                .WithMessage("Cnpj do emissor inválido");
+
+            RuleFor(c => c.CnpjDestinatarioNf)
+                .NotNull()
+                .Must(doc => Validadores.VerificarCnpj(doc))
+                .WithMessage("Cnpj do emissor inválido");
 
             ValidationResult = Validate(this);
             return ValidationResult.IsValid;

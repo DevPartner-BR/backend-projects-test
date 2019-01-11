@@ -82,6 +82,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DevpartnerHelper\DevpartnerHelper.csproj">
+      <Project>{c870b696-5cbf-448d-8e9d-8978a127aaf3}</Project>
+      <Name>DevpartnerHelper</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Mapeamento\Mapeamento.csproj">
       <Project>{E921D13C-3F89-450E-8DDE-B4F4A7DACDA2}</Project>
       <Name>Mapeamento</Name>
