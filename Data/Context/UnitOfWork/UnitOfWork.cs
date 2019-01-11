@@ -25,7 +25,6 @@ namespace Data.Context.UnitOfWork
 
         #endregion
 
-
         #region Métodos Públicos
 
         /// <summary>

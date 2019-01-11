@@ -10,14 +10,6 @@ namespace Domain.Entities
     public class NotaFiscal : EntityIdBase<NotaFiscal>
     {
 
-        #region Objetos/Variáveis Locais
-
-        #endregion
-
-        #region Construtores
-
-        #endregion
-
         #region Propriedades
 
         // NotaFiscalId -> Campo Id

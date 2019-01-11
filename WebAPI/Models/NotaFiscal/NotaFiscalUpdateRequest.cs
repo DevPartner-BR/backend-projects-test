@@ -4,14 +4,12 @@ using WebAPI.Validations;
 
 namespace WebAPI.Models.NotaFiscal
 {
+
+    /// <summary>
+    /// Modelo de requisição de atualização de nota fiscal
+    /// </summary>
     public class NotaFiscalUpdateRequest
     {
-
-        /// <summary>
-        /// Número da nota fiscal
-        /// </summary>
-        [Required(ErrorMessage = "O número da nota fiscal deve ser informado")]
-        public int? NumeroNf { get; set; }
 
         /// <summary>
         /// Valor total da nota fiscal

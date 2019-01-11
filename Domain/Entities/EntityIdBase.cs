@@ -14,6 +14,15 @@ namespace Domain.Entities
     public abstract class EntityIdBase<T> : EntityBase<T> where T : EntityIdBase<T>
     {
 
+        #region Objetos/Variáveis Locais
+
+        /// <summary>
+        /// Id do registro
+        /// </summary>
+        protected Guid? _id = null;
+
+        #endregion
+
         #region Construtores
 
         /// <summary>
@@ -31,11 +40,21 @@ namespace Domain.Entities
         /// <summary>
         /// Id do registro
         /// </summary>
-        public Guid Id { get; protected set; }
+        public Guid? Id {
+            get
+            {
+                if (!_id.HasValue)
+                    _id = Guid.NewGuid();
+                return _id;
+
+                
+            }
+            protected set { _id = value; }
+        }
 
         #endregion
 
-        #region Overrides
+        #region Métodos Públicos/Overrides
 
         /// <summary>
         /// Compara os dois objetos
