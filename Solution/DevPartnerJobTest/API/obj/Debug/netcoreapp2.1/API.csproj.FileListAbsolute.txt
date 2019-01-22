@@ -1,0 +1,17 @@
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\API\bin\Debug\netcoreapp2.1\API.deps.json
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\API\bin\Debug\netcoreapp2.1\API.runtimeconfig.json
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\API\bin\Debug\netcoreapp2.1\API.runtimeconfig.dev.json
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\API\bin\Debug\netcoreapp2.1\API.dll
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\API\obj\Debug\netcoreapp2.1\API.csprojAssemblyReference.cache
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\API\obj\Debug\netcoreapp2.1\API.csproj.CoreCompileInputs.cache
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\API\obj\Debug\netcoreapp2.1\API.RazorAssemblyInfo.cache
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\API\obj\Debug\netcoreapp2.1\API.RazorAssemblyInfo.cs
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\API\obj\Debug\netcoreapp2.1\API.AssemblyInfoInputs.cache
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\API\obj\Debug\netcoreapp2.1\API.AssemblyInfo.cs
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\API\obj\Debug\netcoreapp2.1\API.RazorTargetAssemblyInfo.cache
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\API\bin\Debug\netcoreapp2.1\Domain.dll
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\API\bin\Debug\netcoreapp2.1\API.pdb
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\API\bin\Debug\netcoreapp2.1\Domain.pdb
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\API\obj\Debug\netcoreapp2.1\API.csproj.CopyComplete
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\API\obj\Debug\netcoreapp2.1\API.dll
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\API\obj\Debug\netcoreapp2.1\API.pdb

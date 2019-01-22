@@ -1,0 +1,9 @@
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\Domain\bin\Debug\netcoreapp2.1\Domain.deps.json
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\Domain\bin\Debug\netcoreapp2.1\Domain.dll
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\Domain\bin\Debug\netcoreapp2.1\Domain.pdb
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\Domain\obj\Debug\netcoreapp2.1\Domain.csprojAssemblyReference.cache
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\Domain\obj\Debug\netcoreapp2.1\Domain.csproj.CoreCompileInputs.cache
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfoInputs.cache
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfo.cs
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\Domain\obj\Debug\netcoreapp2.1\Domain.dll
+E:\TI-09\Job Tests\DevPartner\backend-projects-test\Solution\DevPartnerJobTest\Domain\obj\Debug\netcoreapp2.1\Domain.pdb
