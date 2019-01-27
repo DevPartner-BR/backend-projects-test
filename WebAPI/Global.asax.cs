@@ -21,7 +21,7 @@ namespace WebAPI
 
             #region AutoMapper Configuration
             var container = new Container();
-            BootStrapper.RegisterServices(container);
+            container = BootStrapper.RegisterServices(container);
             container.RegisterWebApiControllers(GlobalConfiguration.Configuration);
             container.Verify();
             GlobalConfiguration.Configuration.DependencyResolver = new SimpleInjectorWebApiDependencyResolver(container);

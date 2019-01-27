@@ -1,12 +1,35 @@
+using Domain.Entities;
+using Swashbuckle.Application;
+using Swashbuckle.Swagger;
+using System;
+using System.IO;
 using System.Web.Http;
 using WebActivatorEx;
 using WebAPI;
-using Swashbuckle.Application;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
 namespace WebAPI
 {
+    public class AddSchemaExamples : ISchemaFilter
+    {
+        public void Apply(Schema schema, SchemaRegistry schemaRegistry, Type type)
+        {
+            if (type == typeof(NotaFiscal))
+            {
+                schema.example = new NotaFiscal
+                {
+                    notaFiscalId = 1,
+                    numeroNf = "8546",
+                    valorTotal = 200,
+                    dataNf = DateTime.Now,
+                    cnpjEmissorNf = "4225130001",
+                    cnpjDestinatarioNf = "7858874-09"
+                };
+            }
+        }
+    }
+
     public class SwaggerConfig
     {
         public static void Register()
@@ -32,7 +55,7 @@ namespace WebAPI
                         // hold additional metadata for an API. Version and title are required but you can also provide
                         // additional fields by chaining methods off SingleApiVersion.
                         //
-                        c.SingleApiVersion("v1", "WebAPI");
+                        c.SingleApiVersion("v2", "WebAPI");
 
                         // If you want the output Swagger docs to be indented properly, enable the "PrettyPrint" option.
                         //
@@ -61,7 +84,7 @@ namespace WebAPI
                         //c.BasicAuth("basic")
                         //    .Description("Basic HTTP Authentication");
                         //
-						// NOTE: You must also configure 'EnableApiKeySupport' below in the SwaggerUI section
+                        // NOTE: You must also configure 'EnableApiKeySupport' below in the SwaggerUI section
                         //c.ApiKey("apiKey")
                         //    .Description("API Key Authentication")
                         //    .Name("apiKey")
@@ -101,7 +124,7 @@ namespace WebAPI
                         // those comments into the generated docs and UI. You can enable this by providing the path to one or
                         // more Xml comment files.
                         //
-                        //c.IncludeXmlComments(GetXmlCommentsPath());
+                        c.IncludeXmlComments(GetXmlCommentsPath());
 
                         // Swashbuckle makes a best attempt at generating Swagger compliant JSON schemas for the various types
                         // exposed in your API. However, there may be occasions when more control of the output is needed.
@@ -119,7 +142,7 @@ namespace WebAPI
                         // If you want to post-modify "complex" Schemas once they've been generated, across the board or for a
                         // specific type, you can wire up one or more Schema filters.
                         //
-                        //c.SchemaFilter<ApplySchemaVendorExtensions>();
+                        c.SchemaFilter<AddSchemaExamples>();
 
                         // In a Swagger 2.0 document, complex types are typically declared globally and referenced by unique
                         // Schema Id. By default, Swashbuckle does NOT use the full type name in Schema Ids. In most cases, this
@@ -250,6 +273,11 @@ namespace WebAPI
                         //
                         //c.EnableApiKeySupport("apiKey", "header");
                     });
+        }
+
+        protected static string GetXmlCommentsPath()
+        {
+            return Path.Combine(System.Web.HttpRuntime.AppDomainAppPath, "bin", "WebAPISwagger.xml");
         }
     }
 }

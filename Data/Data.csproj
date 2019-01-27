@@ -31,8 +31,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Context\SystemContext.cs" />
+    <Compile Include="Context\UnitOfWork\UnitOfWork.cs" />
+    <Compile Include="EntitiesConfig\NotaFiscalConfiguration.cs" />
+    <Compile Include="Migrations\201901260210033_Criação_tabela_NotaFiscal.cs" />
+    <Compile Include="Migrations\201901260210033_Criação_tabela_NotaFiscal.Designer.cs">
+      <DependentUpon>201901260210033_Criação_tabela_NotaFiscal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\NotaFiscalRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj">
@@ -53,18 +61,23 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Context\UnitOfWork\" />
-    <Folder Include="EntitiesConfig\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201901260210033_Criação_tabela_NotaFiscal.resx">
+      <DependentUpon>201901260210033_Criação_tabela_NotaFiscal.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
