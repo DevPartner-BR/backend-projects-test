@@ -1,3 +1,52 @@
+# | Documentação
+Foi realizado a codificação conforme solicitação. O banco de dados está sendo criado através das Migrations e a conexão com o mesmo está especificada no Web.Config do projeto WebAPI.
+
+Foi instalado e configurado também o Swagger com todos os métodos.
+
+## | Collection Json Postman
+Na pasta raiz existe o JSON com as consultas padrões a serem utilizadas.
+Segue especificação:
+
+**1 - Método GetToken**
+
+Foi desenvolvido um método para autenticação das APIs, tratando um pouco da segurança. Após a chamada, copiar o conteúdo do campo "access_token" para utilização no header das demais chamadas
+
+**2 - Método Insert**
+
+Método para insert de um novo registro na tabela NotaFiscal. Deve ser executado antes o Método GetToken, copiado o campo "access_token" e copiado no header Authorization junto ao texto "bearer". 
+Ex: "bearer DkCfBctl5quNMu4AV2bDhhR-IZXPJ_lF1zPgN6PlGF_V26hM4N24osnEYAWd-t-qERRAmwRz5EXvAZgdY2Yamk2PVgXHdb1PsAVWTOkOiFUpeBCmg_UfE1DwXYbNJ0F7O_HFi7-Qds-0skJWt8iX1okWrdNnijdV-yVy9ZCoYTbfR2GavT6jPW0JJLqlcRJd"
+Retornos:
+200 - Sucesso
+500 - Erro no servidor
+
+**3 - Método GetAll**
+
+Método para pegar todos os registros na tabela NotaFiscal. Deve ser executado antes o Método GetToken, copiado o campo "access_token" e copiado no header Authorization junto ao texto "bearer". 
+Ex: "bearer DkCfBctl5quNMu4AV2bDhhR-IZXPJ_lF1zPgN6PlGF_V26hM4N24osnEYAWd-t-qERRAmwRz5EXvAZgdY2Yamk2PVgXHdb1PsAVWTOkOiFUpeBCmg_UfE1DwXYbNJ0F7O_HFi7-Qds-0skJWt8iX1okWrdNnijdV-yVy9ZCoYTbfR2GavT6jPW0JJLqlcRJd"
+
+**4 - Método GetById**
+
+Método para pegar um registro específico pelo Id na tabela NotaFiscal. Deve ser executado antes o Método GetToken, copiado o campo "access_token" e copiado no header Authorization junto ao texto "bearer". 
+Ex: "bearer DkCfBctl5quNMu4AV2bDhhR-IZXPJ_lF1zPgN6PlGF_V26hM4N24osnEYAWd-t-qERRAmwRz5EXvAZgdY2Yamk2PVgXHdb1PsAVWTOkOiFUpeBCmg_UfE1DwXYbNJ0F7O_HFi7-Qds-0skJWt8iX1okWrdNnijdV-yVy9ZCoYTbfR2GavT6jPW0JJLqlcRJd"
+
+**5 - Método Update**
+
+Método para update de um registro já existente na tabela NotaFiscal. Deve ser executado antes o Método GetToken, copiado o campo "access_token" e copiado no header Authorization junto ao texto "bearer". 
+Ex: "bearer DkCfBctl5quNMu4AV2bDhhR-IZXPJ_lF1zPgN6PlGF_V26hM4N24osnEYAWd-t-qERRAmwRz5EXvAZgdY2Yamk2PVgXHdb1PsAVWTOkOiFUpeBCmg_UfE1DwXYbNJ0F7O_HFi7-Qds-0skJWt8iX1okWrdNnijdV-yVy9ZCoYTbfR2GavT6jPW0JJLqlcRJd"
+Retornos: 
+200 - Sucesso
+404 - Registro não encontrado
+500 - Erro no servidor
+
+**6 - Método Delete**
+
+Método para realizar a inativação lógica de um registro na tabela NotaFiscal. Deve ser executado antes o Método GetToken, copiado o campo "access_token" e copiado no header Authorization junto ao texto "bearer". 
+Ex: "bearer DkCfBctl5quNMu4AV2bDhhR-IZXPJ_lF1zPgN6PlGF_V26hM4N24osnEYAWd-t-qERRAmwRz5EXvAZgdY2Yamk2PVgXHdb1PsAVWTOkOiFUpeBCmg_UfE1DwXYbNJ0F7O_HFi7-Qds-0skJWt8iX1okWrdNnijdV-yVy9ZCoYTbfR2GavT6jPW0JJLqlcRJd"
+Retornos: 
+200 - Sucesso
+404 - Registro não encontrado
+500 - Erro no servidor
+_______________________________________________________________________________________________________________
 # | Backend na DevPartner
 
 ## | Sobre a DevPartner

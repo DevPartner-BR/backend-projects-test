@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "765c7d79-4223-4898-895c-94c7e3470e09",
+		"name": "TesteDevPartner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"_postman_id": "34df8e8a-9c68-4856-b39d-78322decc849",
+			"name": "Insert",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "bearer 9cLvvJvQtn8Q06l-RaAczkr4VuPk0jeNAgFYIjWS9Lsv3mbXW-_KV9EoRM29WRF6J7R0DGqmAEsGmAxsdLudXS69Rqlr2ujP1YQsFZUKWSJuUZ6x0XfI9QWozz9qg2jpazxJI0Gt3mzrnYB8JJ25AYARgMZ95wi6sVpSsvkurCHlDz-ZwxUNMPrk6KDlTdvY"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Id\" : 0,\n\t\"Numero\" : \"4347654321\",\n\t\"ValorTotal\" : 550,\n\t\"Data\" : \"02-28-2018\",\n\t\"CNPJEmissor\" : \"46.789.735/0001-27\",\n\t\"CNPJDestinatario\" : \"15.348.355/0001-79\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:61171/NotaFiscal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61171",
+					"path": [
+						"NotaFiscal"
+					]
+				},
+				"description": "inserção de nota fiscal"
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "abe32b18-cf67-4751-9135-8bab0a00f2d5",
+			"name": "Get all",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer 9cLvvJvQtn8Q06l-RaAczkr4VuPk0jeNAgFYIjWS9Lsv3mbXW-_KV9EoRM29WRF6J7R0DGqmAEsGmAxsdLudXS69Rqlr2ujP1YQsFZUKWSJuUZ6x0XfI9QWozz9qg2jpazxJI0Gt3mzrnYB8JJ25AYARgMZ95wi6sVpSsvkurCHlDz-ZwxUNMPrk6KDlTdvY"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:61171/NotaFiscal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61171",
+					"path": [
+						"NotaFiscal"
+					]
+				},
+				"description": "retorna todas as notas fiscais"
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "b85e2992-583b-46a7-b28b-c1afcdb0ce5e",
+			"name": "Get by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer 9cLvvJvQtn8Q06l-RaAczkr4VuPk0jeNAgFYIjWS9Lsv3mbXW-_KV9EoRM29WRF6J7R0DGqmAEsGmAxsdLudXS69Rqlr2ujP1YQsFZUKWSJuUZ6x0XfI9QWozz9qg2jpazxJI0Gt3mzrnYB8JJ25AYARgMZ95wi6sVpSsvkurCHlDz-ZwxUNMPrk6KDlTdvY"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:61171/NotaFiscal/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61171",
+					"path": [
+						"NotaFiscal",
+						"1"
+					]
+				},
+				"description": "retorna uma nota fiscal pelo id"
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "5b2b848c-10e2-42ce-ab8c-242a9a24388d",
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "bearer 9cLvvJvQtn8Q06l-RaAczkr4VuPk0jeNAgFYIjWS9Lsv3mbXW-_KV9EoRM29WRF6J7R0DGqmAEsGmAxsdLudXS69Rqlr2ujP1YQsFZUKWSJuUZ6x0XfI9QWozz9qg2jpazxJI0Gt3mzrnYB8JJ25AYARgMZ95wi6sVpSsvkurCHlDz-ZwxUNMPrk6KDlTdvY"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Id\": 1,\n    \"Numero\": \"123456\",\n    \"ValorTotal\": 999.51,\n    \"Data\": \"2018-01-08T00:00:00\",\n    \"CNPJEmissor\": \"14.218.835/0001-27\",\n    \"CNPJDestinatario\": \"15.348.355/0001-79\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:61171/NotaFiscal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61171",
+					"path": [
+						"NotaFiscal"
+					]
+				},
+				"description": "atualiza uma nota fiscal"
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "8efe4710-b6b2-4401-af7c-2c5953c4efaf",
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer 9cLvvJvQtn8Q06l-RaAczkr4VuPk0jeNAgFYIjWS9Lsv3mbXW-_KV9EoRM29WRF6J7R0DGqmAEsGmAxsdLudXS69Rqlr2ujP1YQsFZUKWSJuUZ6x0XfI9QWozz9qg2jpazxJI0Gt3mzrnYB8JJ25AYARgMZ95wi6sVpSsvkurCHlDz-ZwxUNMPrk6KDlTdvY"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:61171/NotaFiscal/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61171",
+					"path": [
+						"NotaFiscal",
+						"6"
+					]
+				},
+				"description": "exclui uma nota fiscal pelo id"
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "069ac237-b916-4bf0-b44e-ffcdeae4451b",
+			"name": "Get token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "DevPartner",
+							"sessionValue": "DevPartner",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Abc123@",
+							"sessionValue": "Abc123@",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"sessionValue": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:61171/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61171",
+					"path": [
+						"token"
+					]
+				},
+				"description": "obter token de acesso"
+			},
+			"response": []
+		}
+	]
+}
