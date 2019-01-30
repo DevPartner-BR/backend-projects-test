@@ -10,7 +10,8 @@ namespace Data.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-        }
+            AutomaticMigrationDataLossAllowed = false;
+            }
 
         protected override void Seed(Data.Context.SystemContext context)
         {
