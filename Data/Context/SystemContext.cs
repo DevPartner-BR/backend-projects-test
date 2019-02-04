@@ -1,13 +1,16 @@
 ﻿
 namespace Data.Context
 {
-    using System;
+    using Domain.Entities;
     using System.Data.Entity;
     using System.Data.Entity.ModelConfiguration.Conventions;
-    using System.Web;
 
     public class SystemContext : DbContext
     {
+        public SystemContext() : base("DevPartner")
+        {
+
+        }
 
         public static SystemContext Create()
         {
@@ -25,6 +28,8 @@ namespace Data.Context
 
             base.OnModelCreating(modelBuilder);
         }
+
+        public virtual DbSet<NotaFiscal> NotaFiscal { get; set; }
 
     }
 }
