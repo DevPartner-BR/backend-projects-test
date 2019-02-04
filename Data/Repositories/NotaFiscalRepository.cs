@@ -12,16 +12,6 @@ namespace Data.Repositories
     {
         private SystemContext _context = new SystemContext();
 
-        public NotaFiscalRepository()
-        {
-
-        }
-
-        public NotaFiscalRepository(SystemContext context)
-        {
-            _context = context;
-        }
-
         public void Persist(NotaFiscal notaFiscal)
         {
             _context.NotaFiscal.Add(notaFiscal);

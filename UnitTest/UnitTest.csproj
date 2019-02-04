@@ -82,7 +82,6 @@
     <Compile Include="Api\ApiTeste.cs" />
     <Compile Include="Application\ApplicationTeste.cs" />
     <Compile Include="Domain\DomainTeste.cs" />
-    <Compile Include="Infrastructure.Data\DataTeste.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
