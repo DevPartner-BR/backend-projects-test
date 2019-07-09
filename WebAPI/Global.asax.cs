@@ -20,12 +20,14 @@ namespace WebAPI
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             #region AutoMapper Configuration
+
             var container = new Container();
             BootStrapper.RegisterServices(container);
             container.RegisterWebApiControllers(GlobalConfiguration.Configuration);
             container.Verify();
             GlobalConfiguration.Configuration.DependencyResolver = new SimpleInjectorWebApiDependencyResolver(container);
             AutoMapperConfig.RegisterMappings(); 
+
             #endregion
         }
     }
