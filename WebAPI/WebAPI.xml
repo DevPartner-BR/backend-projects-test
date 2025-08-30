@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:WebAPI.Controllers.NotaFiscalController.RetornaNotas">
+            <summary>
+            Retorna Lista de Notas Fiscais
+            </summary>
+        </member>
+        <member name="M:WebAPI.Controllers.NotaFiscalController.InsereNotaFiscal(Domain.Entities.NotaFiscal)">
+            <summary>
+            Insere NotaFiscal
+            </summary>
+        </member>
+        <member name="M:WebAPI.Controllers.NotaFiscalController.AtualizaNotaFiscal(Domain.Entities.NotaFiscal)">
+            <summary>
+            Atualiza NotaFiscal
+            </summary>
+        </member>
+        <member name="M:WebAPI.Controllers.NotaFiscalController.ExcluiNotaFiscal(Domain.Entities.NotaFiscal)">
+            <summary>
+            Exclui NotaFiscal
+            </summary>
+        </member>
+    </members>
+</doc>

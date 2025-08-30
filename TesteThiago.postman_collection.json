@@ -1,0 +1,104 @@
+{
+	"id": "1753c23c-4f5e-477d-95cb-8018e3f5d7cd",
+	"name": "TesteThiago",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"f95aa22b-3d39-4665-abee-b7b74dc0f04f",
+		"118af027-e5aa-4b85-a3a7-6323dd7747c0",
+		"967ae2eb-ed38-4470-b093-4b2273e6e8de",
+		"aa3ce7e9-2505-40c5-bfce-d3da461a3fc2"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "118af027-e5aa-4b85-a3a7-6323dd7747c0",
+			"name": "Exclui",
+			"url": "http://localhost:61171/api/notafiscal/exclui",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\r\n  \"notaFiscalId\": 8,\r\n  \"numeroNf\": \"string\",\r\n  \"valorTotal\": 0,\r\n  \"dataNf\": \"2018-04-02T21:00:30.429Z\",\r\n  \"cnpjEmissorNf\": \"string\",\r\n  \"cnpjDestinatarioNf\": \"string\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "967ae2eb-ed38-4470-b093-4b2273e6e8de",
+			"name": "Insere",
+			"url": "http://localhost:61171/api/notafiscal/insere",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\r\n  \"notaFiscalId\": 0,\r\n  \"numeroNf\": \"string\",\r\n  \"valorTotal\": 0,\r\n  \"dataNf\": \"2018-04-02T21:00:30.411Z\",\r\n  \"cnpjEmissorNf\": \"string\",\r\n  \"cnpjDestinatarioNf\": \"string\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "aa3ce7e9-2505-40c5-bfce-d3da461a3fc2",
+			"name": "Atualiza",
+			"url": "http://localhost:61171/api/notafiscal/atualiza",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\r\n  \"notaFiscalId\": 8,\r\n  \"numeroNf\": \"teste\",\r\n  \"valorTotal\": 0,\r\n  \"dataNf\": \"2018-04-02T21:00:30.421Z\",\r\n  \"cnpjEmissorNf\": \"string\",\r\n  \"cnpjDestinatarioNf\": \"string\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f95aa22b-3d39-4665-abee-b7b74dc0f04f",
+			"name": "Select",
+			"url": "http://localhost:61171/api/notafiscal",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}
