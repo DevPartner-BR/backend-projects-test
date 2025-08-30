@@ -1,0 +1,28 @@
+C:\Users\raian\Documents\Visual Studio 2017\Projects\CrudWebAPIAspCore\CrudWebAPIAspCore\obj\Debug\netcoreapp2.1\CrudWebAPIAspCore.csprojAssemblyReference.cache
+C:\Users\raian\Documents\Visual Studio 2017\Projects\CrudWebAPIAspCore\CrudWebAPIAspCore\obj\Debug\netcoreapp2.1\CrudWebAPIAspCore.csproj.CoreCompileInputs.cache
+C:\Users\raian\Documents\Visual Studio 2017\Projects\CrudWebAPIAspCore\CrudWebAPIAspCore\obj\Debug\netcoreapp2.1\CrudWebAPIAspCore.RazorAssemblyInfo.cache
+C:\Users\raian\Documents\Visual Studio 2017\Projects\CrudWebAPIAspCore\CrudWebAPIAspCore\obj\Debug\netcoreapp2.1\CrudWebAPIAspCore.RazorAssemblyInfo.cs
+C:\Users\raian\Documents\Visual Studio 2017\Projects\CrudWebAPIAspCore\CrudWebAPIAspCore\obj\Debug\netcoreapp2.1\CrudWebAPIAspCore.AssemblyInfoInputs.cache
+C:\Users\raian\Documents\Visual Studio 2017\Projects\CrudWebAPIAspCore\CrudWebAPIAspCore\obj\Debug\netcoreapp2.1\CrudWebAPIAspCore.AssemblyInfo.cs
+C:\Users\raian\Documents\Visual Studio 2017\Projects\CrudWebAPIAspCore\CrudWebAPIAspCore\bin\Debug\netcoreapp2.1\CrudWebAPIAspCore.deps.json
+C:\Users\raian\Documents\Visual Studio 2017\Projects\CrudWebAPIAspCore\CrudWebAPIAspCore\bin\Debug\netcoreapp2.1\CrudWebAPIAspCore.runtimeconfig.json
+C:\Users\raian\Documents\Visual Studio 2017\Projects\CrudWebAPIAspCore\CrudWebAPIAspCore\bin\Debug\netcoreapp2.1\CrudWebAPIAspCore.runtimeconfig.dev.json
+C:\Users\raian\Documents\Visual Studio 2017\Projects\CrudWebAPIAspCore\CrudWebAPIAspCore\bin\Debug\netcoreapp2.1\CrudWebAPIAspCore.dll
+C:\Users\raian\Documents\Visual Studio 2017\Projects\CrudWebAPIAspCore\CrudWebAPIAspCore\bin\Debug\netcoreapp2.1\CrudWebAPIAspCore.pdb
+C:\Users\raian\Documents\Visual Studio 2017\Projects\CrudWebAPIAspCore\CrudWebAPIAspCore\obj\Debug\netcoreapp2.1\CrudWebAPIAspCore.RazorTargetAssemblyInfo.cache
+C:\Users\raian\Documents\Visual Studio 2017\Projects\CrudWebAPIAspCore\CrudWebAPIAspCore\obj\Debug\netcoreapp2.1\CrudWebAPIAspCore.dll
+C:\Users\raian\Documents\Visual Studio 2017\Projects\CrudWebAPIAspCore\CrudWebAPIAspCore\obj\Debug\netcoreapp2.1\CrudWebAPIAspCore.pdb
+C:\Users\raian\Documents\TesteDevPartner\backend-projects-test\CrudWebAPIAspCore\CrudWebAPIAspCore\bin\Debug\netcoreapp2.1\CrudWebAPIAspCore.deps.json
+C:\Users\raian\Documents\TesteDevPartner\backend-projects-test\CrudWebAPIAspCore\CrudWebAPIAspCore\bin\Debug\netcoreapp2.1\CrudWebAPIAspCore.runtimeconfig.json
+C:\Users\raian\Documents\TesteDevPartner\backend-projects-test\CrudWebAPIAspCore\CrudWebAPIAspCore\bin\Debug\netcoreapp2.1\CrudWebAPIAspCore.runtimeconfig.dev.json
+C:\Users\raian\Documents\TesteDevPartner\backend-projects-test\CrudWebAPIAspCore\CrudWebAPIAspCore\bin\Debug\netcoreapp2.1\CrudWebAPIAspCore.dll
+C:\Users\raian\Documents\TesteDevPartner\backend-projects-test\CrudWebAPIAspCore\CrudWebAPIAspCore\bin\Debug\netcoreapp2.1\CrudWebAPIAspCore.pdb
+C:\Users\raian\Documents\TesteDevPartner\backend-projects-test\CrudWebAPIAspCore\CrudWebAPIAspCore\obj\Debug\netcoreapp2.1\CrudWebAPIAspCore.csprojAssemblyReference.cache
+C:\Users\raian\Documents\TesteDevPartner\backend-projects-test\CrudWebAPIAspCore\CrudWebAPIAspCore\obj\Debug\netcoreapp2.1\CrudWebAPIAspCore.csproj.CoreCompileInputs.cache
+C:\Users\raian\Documents\TesteDevPartner\backend-projects-test\CrudWebAPIAspCore\CrudWebAPIAspCore\obj\Debug\netcoreapp2.1\CrudWebAPIAspCore.RazorAssemblyInfo.cache
+C:\Users\raian\Documents\TesteDevPartner\backend-projects-test\CrudWebAPIAspCore\CrudWebAPIAspCore\obj\Debug\netcoreapp2.1\CrudWebAPIAspCore.RazorAssemblyInfo.cs
+C:\Users\raian\Documents\TesteDevPartner\backend-projects-test\CrudWebAPIAspCore\CrudWebAPIAspCore\obj\Debug\netcoreapp2.1\CrudWebAPIAspCore.AssemblyInfoInputs.cache
+C:\Users\raian\Documents\TesteDevPartner\backend-projects-test\CrudWebAPIAspCore\CrudWebAPIAspCore\obj\Debug\netcoreapp2.1\CrudWebAPIAspCore.AssemblyInfo.cs
+C:\Users\raian\Documents\TesteDevPartner\backend-projects-test\CrudWebAPIAspCore\CrudWebAPIAspCore\obj\Debug\netcoreapp2.1\CrudWebAPIAspCore.RazorTargetAssemblyInfo.cache
+C:\Users\raian\Documents\TesteDevPartner\backend-projects-test\CrudWebAPIAspCore\CrudWebAPIAspCore\obj\Debug\netcoreapp2.1\CrudWebAPIAspCore.dll
+C:\Users\raian\Documents\TesteDevPartner\backend-projects-test\CrudWebAPIAspCore\CrudWebAPIAspCore\obj\Debug\netcoreapp2.1\CrudWebAPIAspCore.pdb
